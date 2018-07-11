@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64DC0A2520F6982F003A5C38 /* Buy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC0A1720F69812003A5C38 /* Buy.framework */; };
+		64DC0A2720F69841003A5C38 /* Buy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64DC0A1720F69812003A5C38 /* Buy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64DC0A2A20F69849003A5C38 /* Pay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC0A1D20F69812003A5C38 /* Pay.framework */; };
+		64DC0A2B20F6984D003A5C38 /* Pay.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64DC0A1D20F69812003A5C38 /* Pay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A0ED6861E83F120008C605E /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0ED6851E83F120008C605E /* Serializable.swift */; };
 		9A0ED68A1E83FF2D008C605E /* GraphQL+Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0ED6891E83FF2D008C605E /* GraphQL+Serializable.swift */; };
 		9A0ED6911E842467008C605E /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0ED6901E842467008C605E /* CartButton.swift */; };
@@ -21,8 +25,6 @@
 		9A27C32D1E9120AD00218EE8 /* CheckoutViewModel+PayCheckout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27C32C1E9120AD00218EE8 /* CheckoutViewModel+PayCheckout.swift */; };
 		9A27C32F1E91218100218EE8 /* AddressViewModel+PayAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27C32E1E91218100218EE8 /* AddressViewModel+PayAddress.swift */; };
 		9A27C3311E91232500218EE8 /* ShippingRateViewModel+PayShippingRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A27C3301E91232500218EE8 /* ShippingRateViewModel+PayShippingRate.swift */; };
-		9A4069071E8E76C7000254CD /* Pay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4069021E8E76AB000254CD /* Pay.framework */; };
-		9A4069081E8E76CE000254CD /* Pay.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9A4069021E8E76AB000254CD /* Pay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A4069D61E8EEDC9000254CD /* ShippingRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4069D51E8EEDC9000254CD /* ShippingRateViewModel.swift */; };
 		9A7E3F6F1E89615E00713740 /* UICollectionView+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7E3F6E1E89615E00713740 /* UICollectionView+Touch.swift */; };
 		9A8E88511E719A6E0042879D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E88501E719A6E0042879D /* Client.swift */; };
@@ -70,8 +72,6 @@
 		9ADAD4721E563091008AC561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAD4711E563091008AC561 /* Assets.xcassets */; };
 		9ADAD4751E563091008AC561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADAD4731E563091008AC561 /* LaunchScreen.storyboard */; };
 		9ADCC88B1E82FE2900F5B6DD /* TotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADCC88A1E82FE2900F5B6DD /* TotalsViewController.swift */; };
-		9AEF61C71E606C7C0067FA90 /* Buy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEF61C41E606C710067FA90 /* Buy.framework */; };
-		9AEF61C91E606C8B0067FA90 /* Buy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEF61C41E606C710067FA90 /* Buy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9AEF61CC1E606EFE0067FA90 /* Fragment+ProductConnectionQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF61CB1E606EFE0067FA90 /* Fragment+ProductConnectionQuery.swift */; };
 		9AEF61CE1E606F100067FA90 /* Fragment+ImageConnectionQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF61CD1E606F100067FA90 /* Fragment+ImageConnectionQuery.swift */; };
 		9AFA3B7D1E6DB7110056C5AA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFA3B7C1E6DB7110056C5AA /* ProductsViewController.swift */; };
@@ -80,73 +80,82 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9A4069011E8E76AB000254CD /* PBXContainerItemProxy */ = {
+		64DC0A1620F69812003A5C38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A4068DC1E8E7658000254CD;
-			remoteInfo = Pay;
-		};
-		9A4069031E8E76AB000254CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A4068E41E8E7659000254CD;
-			remoteInfo = PayTests;
-		};
-		9A4069051E8E76C3000254CD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A4068DB1E8E7658000254CD;
-			remoteInfo = Pay;
-		};
-		9AEF61C31E606C710067FA90 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9AEF60F31E5F42D90067FA90;
 			remoteInfo = Buy;
 		};
-		9AEF61C51E606C780067FA90 /* PBXContainerItemProxy */ = {
+		64DC0A1820F69812003A5C38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AEF60F21E5F42D90067FA90;
-			remoteInfo = Buy;
-		};
-		9AFA3B7A1E6DB6FE0056C5AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AFA38EA1E64850A0056C5AA;
-			remoteInfo = BuyTests;
-		};
-		9AFEF4671F72A7CC003FA8C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9AC2EFC81F6818180037E0D7;
 			remoteInfo = "Buy watchOS";
 		};
-		9AFEF4691F72A7CC003FA8C5 /* PBXContainerItemProxy */ = {
+		64DC0A1A20F69812003A5C38 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9AF256421F6FEE50005BB0C9;
 			remoteInfo = "Buy tvOS";
 		};
+		64DC0A1C20F69812003A5C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A4068DC1E8E7658000254CD;
+			remoteInfo = Pay;
+		};
+		64DC0A1E20F69812003A5C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AFA38EA1E64850A0056C5AA;
+			remoteInfo = BuyTests;
+		};
+		64DC0A2020F69812003A5C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9A4068E41E8E7659000254CD;
+			remoteInfo = PayTests;
+		};
+		64DC0A2220F6982A003A5C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AEF60F21E5F42D90067FA90;
+			remoteInfo = Buy;
+		};
+		64DC0A2820F69845003A5C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4068DB1E8E7658000254CD;
+			remoteInfo = Pay;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		64DC0A2620F69835003A5C38 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64DC0A2B20F6984D003A5C38 /* Pay.framework in CopyFiles */,
+				64DC0A2720F69841003A5C38 /* Buy.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9AEF61C81E606C800067FA90 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9A4069081E8E76CE000254CD /* Pay.framework in Copy Frameworks */,
-				9AEF61C91E606C8B0067FA90 /* Buy.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +163,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Buy.xcodeproj; path = "../mobile-buy-sdk-ios/Buy.xcodeproj"; sourceTree = "<group>"; };
 		9A0ED6851E83F120008C605E /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		9A0ED6891E83FF2D008C605E /* GraphQL+Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GraphQL+Serializable.swift"; sourceTree = "<group>"; };
 		9A0ED6901E842467008C605E /* CartButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
@@ -218,7 +228,6 @@
 		9ADAD4741E563091008AC561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ADAD4761E563091008AC561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ADCC88A1E82FE2900F5B6DD /* TotalsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalsViewController.swift; sourceTree = "<group>"; };
-		9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Buy.xcodeproj; path = ../../Buy.xcodeproj; sourceTree = "<group>"; };
 		9AEF61CB1E606EFE0067FA90 /* Fragment+ProductConnectionQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fragment+ProductConnectionQuery.swift"; sourceTree = "<group>"; };
 		9AEF61CD1E606F100067FA90 /* Fragment+ImageConnectionQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fragment+ImageConnectionQuery.swift"; sourceTree = "<group>"; };
 		9AFA3B7C1E6DB7110056C5AA /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
@@ -231,14 +240,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4069071E8E76C7000254CD /* Pay.framework in Frameworks */,
-				9AEF61C71E606C7C0067FA90 /* Buy.framework in Frameworks */,
+				64DC0A2A20F69849003A5C38 /* Pay.framework in Frameworks */,
+				64DC0A2520F6982F003A5C38 /* Buy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64DC0A0D20F69812003A5C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64DC0A1720F69812003A5C38 /* Buy.framework */,
+				64DC0A1920F69812003A5C38 /* Buy.framework */,
+				64DC0A1B20F69812003A5C38 /* Buy.framework */,
+				64DC0A1D20F69812003A5C38 /* Pay.framework */,
+				64DC0A1F20F69812003A5C38 /* BuyTests.xctest */,
+				64DC0A2120F69812003A5C38 /* PayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64DC0A2420F6982F003A5C38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A0ED6881E83FF1B008C605E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +484,7 @@
 				9AEF61BE1E606C5F0067FA90 /* Buy */,
 				9ADAD4691E563091008AC561 /* Storefront */,
 				9ADAD4681E563091008AC561 /* Products */,
+				64DC0A2420F6982F003A5C38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -498,22 +528,9 @@
 		9AEF61BE1E606C5F0067FA90 /* Buy */ = {
 			isa = PBXGroup;
 			children = (
-				9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */,
+				64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */,
 			);
 			name = Buy;
-			sourceTree = "<group>";
-		};
-		9AEF61C01E606C710067FA90 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AEF61C41E606C710067FA90 /* Buy.framework */,
-				9AFEF4681F72A7CC003FA8C5 /* Buy.framework */,
-				9AFEF46A1F72A7CC003FA8C5 /* Buy.framework */,
-				9A4069021E8E76AB000254CD /* Pay.framework */,
-				9AFA3B7B1E6DB6FE0056C5AA /* BuyTests.xctest */,
-				9A4069041E8E76AB000254CD /* PayTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9AEF61CA1E606EEB0067FA90 /* Fragments */ = {
@@ -547,12 +564,13 @@
 				9ADAD4641E563091008AC561 /* Frameworks */,
 				9ADAD4651E563091008AC561 /* Resources */,
 				9AEF61C81E606C800067FA90 /* Copy Frameworks */,
+				64DC0A2620F69835003A5C38 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9A4069061E8E76C3000254CD /* PBXTargetDependency */,
-				9AEF61C61E606C780067FA90 /* PBXTargetDependency */,
+				64DC0A2920F69845003A5C38 /* PBXTargetDependency */,
+				64DC0A2320F6982A003A5C38 /* PBXTargetDependency */,
 			);
 			name = Storefront;
 			productName = Storefront;
@@ -594,8 +612,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9AEF61C01E606C710067FA90 /* Products */;
-					ProjectRef = 9AEF61BF1E606C710067FA90 /* Buy.xcodeproj */;
+					ProductGroup = 64DC0A0D20F69812003A5C38 /* Products */;
+					ProjectRef = 64DC0A0C20F69812003A5C38 /* Buy.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -606,46 +624,46 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9A4069021E8E76AB000254CD /* Pay.framework */ = {
+		64DC0A1720F69812003A5C38 /* Buy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Buy.framework;
+			remoteRef = 64DC0A1620F69812003A5C38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64DC0A1920F69812003A5C38 /* Buy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Buy.framework;
+			remoteRef = 64DC0A1820F69812003A5C38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64DC0A1B20F69812003A5C38 /* Buy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Buy.framework;
+			remoteRef = 64DC0A1A20F69812003A5C38 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		64DC0A1D20F69812003A5C38 /* Pay.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Pay.framework;
-			remoteRef = 9A4069011E8E76AB000254CD /* PBXContainerItemProxy */;
+			remoteRef = 64DC0A1C20F69812003A5C38 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9A4069041E8E76AB000254CD /* PayTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PayTests.xctest;
-			remoteRef = 9A4069031E8E76AB000254CD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AEF61C41E606C710067FA90 /* Buy.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Buy.framework;
-			remoteRef = 9AEF61C31E606C710067FA90 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AFA3B7B1E6DB6FE0056C5AA /* BuyTests.xctest */ = {
+		64DC0A1F20F69812003A5C38 /* BuyTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BuyTests.xctest;
-			remoteRef = 9AFA3B7A1E6DB6FE0056C5AA /* PBXContainerItemProxy */;
+			remoteRef = 64DC0A1E20F69812003A5C38 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9AFEF4681F72A7CC003FA8C5 /* Buy.framework */ = {
+		64DC0A2120F69812003A5C38 /* PayTests.xctest */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Buy.framework;
-			remoteRef = 9AFEF4671F72A7CC003FA8C5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AFEF46A1F72A7CC003FA8C5 /* Buy.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Buy.framework;
-			remoteRef = 9AFEF4691F72A7CC003FA8C5 /* PBXContainerItemProxy */;
+			fileType = wrapper.cfbundle;
+			path = PayTests.xctest;
+			remoteRef = 64DC0A2020F69812003A5C38 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -737,15 +755,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9A4069061E8E76C3000254CD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Pay;
-			targetProxy = 9A4069051E8E76C3000254CD /* PBXContainerItemProxy */;
-		};
-		9AEF61C61E606C780067FA90 /* PBXTargetDependency */ = {
+		64DC0A2320F6982A003A5C38 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Buy;
-			targetProxy = 9AEF61C51E606C780067FA90 /* PBXContainerItemProxy */;
+			targetProxy = 64DC0A2220F6982A003A5C38 /* PBXContainerItemProxy */;
+		};
+		64DC0A2920F69845003A5C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pay;
+			targetProxy = 64DC0A2820F69845003A5C38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
